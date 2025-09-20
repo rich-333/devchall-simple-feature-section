@@ -1,5 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --color-black: #121826;
+  --color-gray: #9DA3AE;
+  --color-dark-gray: #212936;
+  --color-white: #E5E7EB;
+  --color-light-blue: #DEE9FC;
+  --color-light-pink: #FBE5E6;
+  --color-light-vanilla: #FCEED8;
+  --color-light-gray: #D2D5DA;
+  --font-primary: "Outfit", sans-serif;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
-  background-color: orange;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--font-primary);
+  font-size: 16px;
+}
+
+.main {
+  display: flex;
+  margin: 2rem auto;
+  flex-direction: column;
+  width: 330px;
+}
+
+.main__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.main__title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.main__info {
+  color: var(--color-gray);
+}
+
+.container__articles {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.article {
+  background-color: var(--color-dark-gray);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+}
+
+.article__icon {
+  background-color: var(--color-light-vanilla);
+  border-radius: 100%;
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon__hand {
+  background-color: var(--color-light-vanilla);
+}
+
+.icon__porter {
+  background-color: var(--color-light-blue);
+}
+
+.icon__conversation {
+  background-color: var(--color-light-pink);
+}
+
+.article__title{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.article__description {
+  font-weight: 400;
+  color: var(--color-light-gray);
+  width: 14rem;
+}
+
+.article__img {
+  width: 100%;
+  border-radius: 0.8rem;
 }
